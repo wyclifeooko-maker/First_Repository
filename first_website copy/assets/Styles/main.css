@@ -1,0 +1,330 @@
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin: 0 50px 0 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+nav ul li a:hover{
+    color: black;
+    background-color: #ff9d13;
+    padding: 5px 30px;
+    border-radius: 50px;
+}
+.hero-image{
+    background-image: url("https://cdn.pixabay.com/photo/2023/05/25/19/48/russian-orthodox-church-8018200_960_720.jpg");
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    font-family: arial, helvetica, sans-serif;
+}
+section{
+    background-color: #ff9d13;
+    padding: 5% 10% 10% 10%;
+    margin-top: 10px;
+}
+section p{
+    color: white;
+    text-align: justify;
+    font-size: 16px;
+    position: relative;
+    font-family: arial, helvetica, sans-serif;
+    background-color: black;
+    padding: 5%;
+    font-weight: bold;
+}
+footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width:100%;
+    font-family: arial, helvetica, sans-serif;
+}
+
+/*about page styles starts here*/
+main section{
+    background-color: #ff9d13;
+    margin-top: 10px;
+}
+.about-us h1{
+    text-align: center;
+    font-size: 33px;
+    color: white;
+    border-bottom: 2px solid black;
+}
+.about-us h2{
+    font-size: 24px;
+    color: white;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.about-us p{
+    font-family: arial, helvetica, sans-serif;
+    color: white;
+    line-height: 1.8;
+    text-align:justify;
+    background-color: black;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 5%;
+}
+.about-us ul li{
+    font-size: 16px;
+    color: black;
+}
+.contact{
+    background-color: #9b735a;
+}
+.contact ol li{
+    font-size: 16px;
+    color: black;
+    text-align:  justify;
+}
+.contact h2{
+    font-size: 24px;
+    color: white;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.contact h3{
+    font-size: 24px;
+    color: black;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.contact p{
+    font-family: arial, helvetica, sans-serif;
+    color: white;
+    line-height: 1.8;
+    text-align: center;
+    background-color: black;
+    padding: 5%;
+    font-weight: bold;
+}
+
+/*start of contact styling*/
+
+.hero-label ul{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: times;
+    display: flex;
+    list-style-type: none;
+    gap: 50%;
+}
+.container{
+    background-color: #9b735a;
+    Display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+.form{
+    flex: 1;
+    max-width: 400px;
+}
+.map{
+    flex: 1;
+}
+.map iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 50px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+input,
+textarea{
+    width: 100%;
+    padding: 10px;
+}
+input[type="submit"]{
+    padding: 10px 20px;
+    background-color: blue;
+    border: none;
+    width: fit-content;
+    border-radius: 50px;
+}
+.hero-label{
+    background-color: #ff9d13;
+    padding: 5px;
+}
+
+
+/*table style*/
+
+.table-container{
+    width: 800px;
+    margin: 20px;
+}
+table{
+    width: 100%;
+}
+thead th{
+    background: #1976d2;
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+tbody td{
+    background: #ADF0F3;
+    padding: 3px;
+}
+
+/*gallery style starts here*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.gallery-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+carousel
+
+#carouselExampleCaptions {
+    max-width: 100%;
+    height: 80vh; /* full screen height */
+    overflow: hidden;
+    position: relative;
+    margin: 100px;
+}
+
+/* --- Carousel Images --- */
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh; /* make images fill screen vertically */
+    filter: brightness(70%); /* darken background slightly for better text visibility */
+    transition: transform 1.2s ease, filter 0.5s ease;
+}
+
+/* Zoom-in effect on active slide */
+.carousel-item.active img {
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+
+/* --- Caption Styling --- */
+.carousel-caption {
+    bottom: 30%;
+    text-align: left;
+    left: 10%;
+    right: 10%;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 20px 30px;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin-top: 10px;
+}
+
+/* --- Controls (Next/Prev) --- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 60%;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #ffffff;
+}
+
+/* --- Indicators --- */
+.carousel-indicators [data-bs-target] {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #00bcd4; /* accent color */
+}
+
+/* --- Animation Keyframes --- */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 20%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
